@@ -1,13 +1,11 @@
 const contenedoQR = document.getElementById('contenedorQR');
-
-const QR = new QRCode(contenedoQR);
+const formulario = document.getElementById('formulario')
+const QrCode = new QRCode(contenedoQR);
 
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
-    const ArrayQR = [
-        Familia = formulario.family.value,
-        Pases = formulario.passes.value
-    ];
-    // console.log("Informacion", ArrayQR);
-    QR.makeCode(ArrayQR);
+    const texts = {
+        content: formulario.texts.value
+    }
+    QrCode.makeCode(texts.content);
 });

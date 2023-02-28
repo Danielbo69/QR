@@ -19,29 +19,24 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="page">
-            <form action="https://formsubmit.co/danielboscanramos@gmail.com" id="formulario" class="formulario">
-                <dic class="col-mb-3">
-                    <h1>Codigo QR</h1>
-                </dic>
-                <br />
-                <div class="row">
-                    <div class="col mb-12">
-                        <textarea class="form-control textarea" type="text" placeholder="Familia" id="nameFamily"></textarea>
+    <div class="content-all">
+        <div class="container-form">
+            <form id="formulario" class="formulario">
+                <div class="container">
+                    <div class="col-mb content-form">
+                        <h1 class="text-center">Codigo QR</h1>
+                        <textarea class="textarea" type="text" placeholder="Texto" id="texts" maxheight="70"></textarea>
+                        <button class="btn-create">Crear QR</button>
                     </div>
                 </div>
-                <br />
-                <div class="col mb-12">
-                    <button class="btn btn-primary" style="width: 100%">
-              Crear QR
-            </button>
-                </div>
             </form>
-            <br />
-            <div id="contenedorQR" class="contenedorQR"></div>
+            <br>
+            <div id="contenedorQR" class="contenedorQR">
+
+            </div>
         </div>
     </div>
+    <script defer src="/js/app.js"></script>
 </body>
 
 </html>

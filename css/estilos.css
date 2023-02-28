@@ -1,86 +1,73 @@
-body {
-	font-family: Arial, Helvetica, sans-serif;
+.content-all {
+    height: 100vh;
+    background-color: #20202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#app {
-	width: 700px;
-	margin: 0 auto;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-#user-info {
-	text-align: center;
+.formulario {
+    width: 100%;
 }
 
-#user-info img {
-	border-radius: 50%;
-	display: block;
-	width: 100px;
-	margin: 0 auto;
+.container-form {
+    width: 600px;
+    height: 500px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    transition: all 400ms ease;
+    background-color: #ffffff;
 }
 
-#user-info span {
-	display: block;
-	padding: 10px 0;
-	font-weight: bolder;
-	font-size: 28px;
-}
-
-input[type="text"] {
-	box-sizing: border-box;
-	padding: 10px 5px;
-	width: 100%;
-	border-radius: 5px;
-}
-
-#todos-container li {
-	list-style: none;
-	padding: 15px 0;
-	font-size: 20px;
-	border-bottom: 1px solid #eee;
-}
-
-#todos-container li:hover {
-	background-color: #eee;
-}
-
-.hidden {
-	display: none;
-}
-
-body {
-	font-family: 'Open Sans', sans-serif;
-}
-
-.contenedorQR {
-	display: flex;
-	justify-content: center;
-	padding: 40px 0;
+.content-form {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .textarea {
-	height: 117px;
-	min-height: 117px !important;
-	max-height: 117px;
+    min-height: 70px;
+    max-height: 70px;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #1d3461;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #1d3461;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.textarea:focus {
-	outline: 0px !important;
-    box-shadow: none !important;
-	border-color: rgb(182, 181, 181) !important;
+.btn-create {
+    width: 100%;
+    height: 40px;
+    color: #1d3461;
+    border: 1px solid #1d3461;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-top: 10px;
 }
 
-.btn-primary {
-    background-color: #ff3b90 !important;
-    border-color: #ff3b90 !important;
+.btn-create:hover {
+    opacity: 0.6;
+    background-color: #1d3461;
+    color: #fff;
 }
 
-.btn-primary:hover {
-    background-color: #ff2382 !important;
-    border-color: #ff2382 !important;
-}
-
-.btn-primary:focus {
-	outline: 0 !important;
-    box-shadow: none !important;
-	border-color: none !important;
+.contenedorQR {
+    display: flex;
+    justify-content: center;
 }
